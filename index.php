@@ -22,11 +22,17 @@
       <?php
         $error = "";
         if($_POST['submit'] == "submit"){
-          if($_POST['fname'] == ""){
+          if($_POST['fname'] == "") {
             $error = "Please enter your name<br/>";
+          } else if(strlen($_POST['fname']) > 15){
+            $error = "Your first name is too long, please shorten it<br/>";
+          } else if(strlen($_POST['fname']) <= 2){
+            $error = "Your first name is too short, please use at least 3 letters<br/>";
           }
           if($_POST['age'] == ""){
             $error = $error."Please enter your age";
+          } else if(intval($_POST['age']) < 18 ) {
+            $error = "Sorry, you're too young for this form";
           }
           if($error != ""){
             echo "<div class='error'>$error</div>";

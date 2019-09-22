@@ -8,6 +8,7 @@
         name="fname"
         type="text"
         id="fname"
+        value="<?php echo $_POST['fname']?>"
       />
     </div>
     <div class="input-field col s6">
@@ -17,6 +18,7 @@
         type="number"
         id="age"
         min="1"
+        value="<?php echo $_POST['age']?>"
       />
     </div>
   </div>
