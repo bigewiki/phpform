@@ -1,6 +1,5 @@
 <h1 class="center-align title-header">POST Request</h1>
-<!-- <form method="post" action="<?php $_SERVER[SCRIPT_NAME]; ?>"> -->
-<form method="post" action="index.php">
+<form method="post" action="<?php $_SERVER[SCRIPT_NAME]; ?>">
   <div class="row">
     <div class="input-field col s6">
       <label for="fname">First Name</label
@@ -120,7 +119,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="input-field col s6">
+    <div class="input-field col s6 fill">
       <input class="waves-effect waves-light btn" type="reset" />
     </div>
     <div class="input-field col s6">
