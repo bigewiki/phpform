@@ -1,5 +1,4 @@
-<h1 class="center-align title-header">POST Request</h1>
-<form method="post" action="<?php echo $_SERVER['SCRIPT_NAME'] ?>">
+<form method="POST" action="<?php echo $_SERVER['SCRIPT_NAME'] ?>">
   <div class="row">
     <div class="input-field col s6">
       <label for="fname">First Name</label
@@ -9,19 +8,15 @@
         name="fname"
         type="text"
         id="fname"
-        class="validate"
-        required
       />
     </div>
     <div class="input-field col s6">
       <label for="age">Age</label
       ><input
-        class="validate"
         name="age"
         min="1"
         type="number"
         id="age"
-        required
       />
     </div>
   </div>

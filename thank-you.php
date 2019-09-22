@@ -1,10 +1,11 @@
-<h1 class="center-align title-header">Thank you!</h1>
 <p class="center-align thank-you">
     <?php
         $whoAreYou = (strtolower($_POST['fname']) == "edward") ? "Welcome back, our fearless leader!" : "Hello ".trim(ucfirst($_POST['fname']))."!";
         echo "$whoAreYou <br/>";
         echo "Your form has been submitted.<br/><br/>Please enjoy while we count up to your age:<br/>";
         $number = 1;
+        echo "age".intval($_POST['age']);
+
         while ( $number <= $_POST['age'] )
         {
             echo "$number ";

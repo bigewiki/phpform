@@ -19,13 +19,33 @@
   </head>
   <body>
     <div class="container form-container z-depth-3">
-    <?php
-      if ($_POST['submit'] != "submit"){
-        include("form.php");
-      } else {
-        include("thank-you.php");
-      }
-    ?>
+      <?php
+        $error = "";
+        if($_POST['submit'] == "submit"){
+          if($_POST['fname'] == ""){
+            $error = "Please enter your name<br/>";
+          }
+          if($_POST['age'] = ""){
+            $error = $error."Please enter your age";
+          }
+          if($error != ""){
+            echo "<div class='card'>$error</div>";
+          }
+        }
+      ?>
+      <h1 class="center-align title-header">
+        <?php
+        $title=($_POST['submit'] != "submit" && !$error)?"POST Request":"Thank You!";
+        echo $title;
+        ?>
+      </h1>
+      <?php
+        if ($_POST['submit'] == "submit" && !$error){
+          include("thank-you.php");
+        } else {
+          include("form.php");
+        }
+      ?>
     </div>
     <footer>
       <div id="validator"></div>
