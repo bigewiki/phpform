@@ -3,20 +3,15 @@
     <?php
         $whoAreYou = (strtolower($_POST['fname']) == "edward") ? "Welcome back, our fearless leader!" : "Hello ".trim(ucfirst($_POST['fname']))."!";
         echo "$whoAreYou <br/>";
-    ?>
-    Your form has been submitted!<br/><br/>
-    Please enjoy while we count up to your age!<br/>
-    <?php
+        echo "Your form has been submitted.<br/><br/>Please enjoy while we count up to your age:<br/>";
         $number = 1;
         while ( $number <= $_POST['age'] )
         {
             echo "$number ";
             $number++;
         }
-    ?><br/><br/>
-    <?php
-        switch($_POST['kids'])
-        {
+        echo "<br/><br/>";
+        switch($_POST['kids']){
             case "yes":
                 echo "We see you said you had kids... Here's a helpful resource:<br/> <a href='https://www.psychologytoday.com/us/blog/emotional-fitness/201509/top-10-parenting-tips' target='_blank'> Psychology Today - Top 10 Parenting Tips</a>";
                 break;
@@ -30,6 +25,7 @@
                 echo "Afraid to say if you had kids or not?";
                 break;
         }
+        echo "<br/><br/>Today's date is: ".date('l, F j, o');
     ?>
 </p>
 <form method="post" action="<?php echo $_SERVER['SCRIPT_NAME'] ?>">
