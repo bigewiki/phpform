@@ -25,3 +25,7 @@ footer {
   flex-shrink: 0;
   margin-top: auto;
 }
+
+h1.title-header {
+  font-size: 30px;
+}
