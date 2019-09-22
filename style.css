@@ -41,3 +41,7 @@ h1.title-header {
 .waves-button-input:hover {
   cursor: pointer;
 }
+
+.resubmit {
+  margin: 0 auto;
+}

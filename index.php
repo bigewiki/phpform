@@ -20,10 +20,10 @@
   <body>
     <div class="container form-container">
     <?php
-      if (!$_POST['submit']){
+      if ($_POST['submit'] != "submit"){
         include("form.php");
       } else {
-        echo "submitted";
+        include("thank-you.php");
       }
     ?>
     </div>
