@@ -1,5 +1,5 @@
 <h1 class="center-align title-header">POST Request</h1>
-<form method="post" action="<?php echo $_SERVER[SCRIPT_NAME] ?>">
+<form method="post" action="<?php echo $_SERVER['SCRIPT_NAME'] ?>">
   <div class="row">
     <div class="input-field col s6">
       <label for="fname">First Name</label
@@ -30,87 +30,38 @@
       <div class="flex-row">
         <div class="radio-wrapper">
           <fieldset>
-            <legend>Timezone</legend>
+            <legend>Do You Have Kids?</legend>
             <div class="radio-pair">
-              <label for="eastern">
+              <label for="yes">
                 <input
                   type="radio"
-                  id="eastern"
-                  name="timezone"
-                  value="eastern"
+                  id="yes"
+                  name="kids"
+                  value="yes"
                 />
-                <span>US Eastern UTC -4</span>
-              </label>
-            </div>
-
-            <div class="radio-pair">
-              <label for="central">
-                <input
-                  type="radio"
-                  id="central"
-                  name="timezone"
-                  value="central"
-                />
-                <span>US Central UTC -5</span>
+                <span>Yes</span>
               </label>
             </div>
             <div class="radio-pair">
-              <label for="mountain-daylight">
+              <label for="no">
                 <input
                   type="radio"
-                  id="mountain-daylight"
-                  name="timezone"
-                  value="mountain-daylight"
+                  id="no"
+                  name="kids"
+                  value="no"
                 />
-                <span>US Mountain Daylight UTC -6</span>
+                <span>No, don't want them</span>
               </label>
             </div>
             <div class="radio-pair">
-              <label></label>
-            </div>
-            <div class="radio-pair">
-              <label for="mountain-standard">
+              <label for="someday">
                 <input
                   type="radio"
-                  id="mountain-standard"
-                  name="timezone"
-                  value="mountain-standard"
-                  checked="checked"
+                  id="someday"
+                  name="kids"
+                  value="someday"
                 />
-                <span>Moutain Standard (Arizona)</span>
-              </label>
-            </div>
-            <div class="radio-pair">
-              <label for="pacific">
-                <input
-                  type="radio"
-                  id="pacific"
-                  name="timezone"
-                  value="pacific"
-                />
-                <span>US Pacific UTC -7</span>
-              </label>
-            </div>
-            <div class="radio-pair">
-              <label for="alaska">
-                <input
-                  type="radio"
-                  id="alaska"
-                  name="timezone"
-                  value="alaska"
-                />
-                <span>Alaska UTC -8</span>
-              </label>
-            </div>
-            <div class="radio-pair">
-              <label for="hawaii">
-                <input
-                  type="radio"
-                  id="hawaii"
-                  name="timezone"
-                  value="hawaii"
-                />
-                <span>Hawaii UTC -10</span>
+                <span>Maybe someday</span>
               </label>
             </div>
           </fieldset>

@@ -18,7 +18,7 @@
     />
   </head>
   <body>
-    <div class="container form-container">
+    <div class="container form-container z-depth-3">
     <?php
       if ($_POST['submit'] != "submit"){
         include("form.php");
