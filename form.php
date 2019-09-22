@@ -80,3 +80,8 @@
     </div>
   </div>
 </form>
+<script>
+  if(<?php echo $_POST['kids']?>){
+    document.getElementById("<?php echo $_POST['kids']?>").checked = true;
+  }
+</script>
