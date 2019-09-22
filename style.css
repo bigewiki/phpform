@@ -50,3 +50,12 @@ footer {
   margin-top: auto;
   padding: 10px;
 }
+
+.error {
+  padding: 20px;
+  background-color: #a62632;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+}

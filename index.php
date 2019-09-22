@@ -25,11 +25,11 @@
           if($_POST['fname'] == ""){
             $error = "Please enter your name<br/>";
           }
-          if($_POST['age'] = ""){
+          if($_POST['age'] == ""){
             $error = $error."Please enter your age";
           }
           if($error != ""){
-            echo "<div class='card'>$error</div>";
+            echo "<div class='error'>$error</div>";
           }
         }
       ?>

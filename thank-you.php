@@ -4,8 +4,6 @@
         echo "$whoAreYou <br/>";
         echo "Your form has been submitted.<br/><br/>Please enjoy while we count up to your age:<br/>";
         $number = 1;
-        echo "age".intval($_POST['age']);
-
         while ( $number <= $_POST['age'] )
         {
             echo "$number ";

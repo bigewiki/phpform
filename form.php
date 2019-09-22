@@ -14,9 +14,9 @@
       <label for="age">Age</label
       ><input
         name="age"
-        min="1"
         type="number"
         id="age"
+        min="1"
       />
     </div>
   </div>
