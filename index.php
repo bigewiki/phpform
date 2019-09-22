@@ -41,7 +41,7 @@
       ?>
       <h1 class="center-align title-header">
         <?php
-        $title=($_POST['submit'] != "submit" && !$error)?"POST Request":"Thank You!";
+        $title=($_POST['submit'] != "submit" || $error != "")?"POST Request":"Thank You!";
         echo $title;
         ?>
       </h1>

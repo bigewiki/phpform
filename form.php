@@ -81,7 +81,7 @@
   </div>
 </form>
 <script>
-  if(<?php echo $_POST['kids']?>){
+  if(String(<?php echo $_POST['kids']?>) !== ""){
     document.getElementById("<?php echo $_POST['kids']?>").checked = true;
   }
 </script>
